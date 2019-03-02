@@ -32,7 +32,6 @@ int main() {
 
 	/* memory map the shared memory object */
 	ptr = (char *)
-	//struct filesharing_struc *ptr = (struct filesharing_struc *ptr);
 	mmap(0, SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
 	/* write to the shared memory object */
